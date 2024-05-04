@@ -1,0 +1,30 @@
+.image_label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    border: 1px solid #808080;
+    border-radius: 16px;
+    /* margin: 8rem auto; */
+}
+.imgInput{
+    display: none;
+}
+
+.cameraIcon{
+    height: 10rem;
+    width: 10rem;
+}
+
+.img_container{
+    width: 60rem;
+    height: 40rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border: 1px solid #808080;
+    border-radius: 1.2rem;
+    margin: 0 1rem;
+}

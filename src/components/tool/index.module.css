@@ -1,0 +1,286 @@
+.get{
+    position: absolute;
+    bottom: -4.32rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.download{
+    position: absolute;
+    bottom: 2rem;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+}
+
+.tool_container{
+    width: 100vw;
+    height: calc(100vh - 67.8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+}
+
+.tool{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close{
+    margin: 0;
+    padding: .5rem;
+    background-color: #000;
+    opacity: .6;
+    border-radius: 50%;
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+    cursor: pointer;
+}
+
+.close:hover{
+    opacity: .4;
+}
+
+
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    /* top: 0; */
+    z-index: 99;
+}
+  
+.image_container{
+    z-index: 100;
+    width: 70%;
+    height: 80%;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+  
+.hide{
+    display: none !important;
+}
+
+
+.sideTools{
+    position: absolute;
+    width: 8rem;
+    height: 100%;
+    /* background-color: aqua; */
+    top: 0;
+    left: -8rem;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sideTools svg{
+    padding: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.sideTools svg:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.sideTools svg:last-of-type{
+    margin-top: 2rem;
+}
+
+.form{
+    padding: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 101;
+    background-color: #000;
+}
+
+.form p, form span{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0 .4rem;
+}
+
+.formInput{
+    font-size: 1.6rem;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.527);
+    padding: .5rem 1rem;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.formInput:focus{
+    border: 1px solid #fff;
+}
+
+.form_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_header span{
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form_header span:hover{
+    opacity: .8;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.labelInput > label{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: .4rem;
+}
+
+.submitBtn{
+    display: flex;
+    margin-top: 1rem;
+    background-color: rgb(95, 93, 93);
+    font-size: 1.6rem;
+    color: #fff;
+    display: block;
+}
+
+.help{
+    margin: 0;
+    padding: .6rem;
+    color: #fff;
+    background-color: black;
+    font-size: 1.6rem;
+    position: absolute;
+    top: .6rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.label_options{
+    background-color: #000;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_options button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: .9rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.label_options button:hover{
+    opacity: .8;
+}
+
+.label_options button:first-of-type{
+    margin-top: 2rem;
+}
+
+.label_options button:last-of-type{
+    color: red;
+}
+
+.label_options span{
+    width: 1.5rem;
+    height: 1.5rem;
+    /* padding: .2rem; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: .2rem;
+}
+
+.label_options span:hover{
+    opacity: .8;
+}
+
+.customUi{
+    position: relative;
+    z-index: 200;
+    /* background-color: red; */
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.customUi button{
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.customUi button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.customUi svg{
+    border: 1px solid black;
+    border-radius: .8rem;
+    cursor: pointer;
+    padding: .4rem;
+    margin-right: 1rem;    
+}
+
+.customUi svg:hover{
+    background-color: #000;
+}
+
+.customUi svg:hover path{
+    fill: #fff;
+}
